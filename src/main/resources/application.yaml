@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: next-gen-sales-service
+  datasource:
+    url: jdbc:postgresql://localhost:5432/postgres
+    hikari:
+      username: admin
+      password: admin
+      max-lifetime: 14400000
+      minimumIdle: 10
+      maximum-pool-size: 10
+      connection-timeout: 15000
+      keep-alive-timeout: 60000
+      leak-detection-threshold: 30000
