@@ -27,6 +27,7 @@ public class OrderItemEntity {
     @JoinColumn(name = "component_catalog_id")
     private ComponentCatalogEntity componentCatalogEntity;
     
+    private String price;
     private String status;
     private Timestamp createDate;
     private Timestamp modifyDate;

@@ -42,6 +42,7 @@ public class OrderService {
                     
                     return OrderItemEntity.builder()
                             .componentCatalogEntity(catalog)
+                            .price(catalog.getPriceMin())
                             .status("NEW")
                             .createDate(now)
                             .modifyDate(now)
@@ -63,6 +64,7 @@ public class OrderService {
             OrderItemEntity updatedItem = OrderItemEntity.builder()
                     .orderEntity(order)
                     .componentCatalogEntity(item.getComponentCatalogEntity())
+                    .price(item.getPrice())
                     .status(item.getStatus())
                     .createDate(item.getCreateDate())
                     .modifyDate(item.getModifyDate())
@@ -100,6 +102,7 @@ public class OrderService {
                 .orderId(entity.getOrderEntity() != null ? entity.getOrderEntity().getId() : null)
                 .componentCatalogId(entity.getComponentCatalogEntity() != null ? entity.getComponentCatalogEntity().getId() : null)
                 .componentCatalogName(entity.getComponentCatalogEntity() != null ? entity.getComponentCatalogEntity().getName() : null)
+                .price(entity.getPrice())
                 .status(entity.getStatus())
                 .createDate(entity.getCreateDate())
                 .modifyDate(entity.getModifyDate())

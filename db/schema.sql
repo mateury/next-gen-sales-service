@@ -85,6 +85,7 @@ CREATE TABLE ORDER_ITEM
     ID                   SERIAL,
     ORDER_ID             INTEGER,
     COMPONENT_CATALOG_ID INTEGER,
+    PRICE                VARCHAR(255),
     STATUS               VARCHAR(255), -- NEW / PROCESSING / CLOSED / ERROR
     CREATE_DATE          TIMESTAMP,
     MODIFY_DATE          TIMESTAMP,
@@ -231,11 +232,17 @@ INSERT INTO COMPONENT_CATALOG (ID, TYPE, NAME, PRICE_MIN, PRICE_MAX, PARAMETER_N
                                MODIFY_DATE)
 VALUES (1, 'MOBILE', 'Pakiet danych', '39.99', '49.99', 'limit_danych', '50GB', 'ACTIVE', CURRENT_TIMESTAMP,
         CURRENT_TIMESTAMP),
-       (2, 'MOBILE', 'Pakiet danych', '69.99', '79.99', 'limit_danych', '100GB', 'ACTIVE', CURRENT_TIMESTAMP, CURRENT_TIMESTAMP),
+       (2, 'MOBILE', 'Pakiet danych', '69.99', '79.99', 'limit_danych', '100GB', 'ACTIVE', CURRENT_TIMESTAMP,
+        CURRENT_TIMESTAMP),
        (3, 'MOBILE', 'Pakiet danych', '89.99', '99.99', 'limit_danych', 'nielimitowany', 'ACTIVE', CURRENT_TIMESTAMP,
         CURRENT_TIMESTAMP),
-       (4, 'INTERNET', 'Internet światłowodowy', '49.99', '59.99', 'predkosc', '300Mbps', 'ACTIVE', CURRENT_TIMESTAMP, CURRENT_TIMESTAMP),
-       (5, 'INTERNET', 'Internet światłowodowy', '69.99', '79.99', 'predkosc', '600Mbps', 'ACTIVE', CURRENT_TIMESTAMP, CURRENT_TIMESTAMP),
-       (6, 'INTERNET', 'Internet światłowodowy', '89.99', '99.99', 'predkosc', '1Gbps', 'ACTIVE', CURRENT_TIMESTAMP, CURRENT_TIMESTAMP),
-       (7, 'TV', 'Pakiet Telewizyjny', '29.99', '39.99', 'kanaly', '100', 'ACTIVE', CURRENT_TIMESTAMP, CURRENT_TIMESTAMP),
-       (8, 'TV', 'Pakiet Telewizyjny', '49.99', '59.99', 'kanaly', '150', 'ACTIVE', CURRENT_TIMESTAMP, CURRENT_TIMESTAMP);
+       (4, 'INTERNET', 'Internet światłowodowy', '49.99', '59.99', 'predkosc', '300Mbps', 'ACTIVE', CURRENT_TIMESTAMP,
+        CURRENT_TIMESTAMP),
+       (5, 'INTERNET', 'Internet światłowodowy', '69.99', '79.99', 'predkosc', '600Mbps', 'ACTIVE', CURRENT_TIMESTAMP,
+        CURRENT_TIMESTAMP),
+       (6, 'INTERNET', 'Internet światłowodowy', '89.99', '99.99', 'predkosc', '1Gbps', 'ACTIVE', CURRENT_TIMESTAMP,
+        CURRENT_TIMESTAMP),
+       (7, 'TV', 'Pakiet Telewizyjny', '29.99', '39.99', 'kanaly', '100', 'ACTIVE', CURRENT_TIMESTAMP,
+        CURRENT_TIMESTAMP),
+       (8, 'TV', 'Pakiet Telewizyjny', '49.99', '59.99', 'kanaly', '150', 'ACTIVE', CURRENT_TIMESTAMP,
+        CURRENT_TIMESTAMP);
