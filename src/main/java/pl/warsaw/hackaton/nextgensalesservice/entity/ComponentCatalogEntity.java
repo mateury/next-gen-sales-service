@@ -19,6 +19,7 @@ public class ComponentCatalogEntity {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String type;
+    private String name;
     private String priceMin;
     private String priceMax;
     private String parameterName;

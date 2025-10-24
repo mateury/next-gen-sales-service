@@ -99,6 +99,7 @@ public class OrderService {
                 .id(entity.getId())
                 .orderId(entity.getOrderEntity() != null ? entity.getOrderEntity().getId() : null)
                 .componentCatalogId(entity.getComponentCatalogEntity() != null ? entity.getComponentCatalogEntity().getId() : null)
+                .componentCatalogName(entity.getComponentCatalogEntity() != null ? entity.getComponentCatalogEntity().getName() : null)
                 .status(entity.getStatus())
                 .createDate(entity.getCreateDate())
                 .modifyDate(entity.getModifyDate())

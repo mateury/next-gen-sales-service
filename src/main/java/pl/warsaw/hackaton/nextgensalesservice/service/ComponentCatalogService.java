@@ -24,6 +24,7 @@ public class ComponentCatalogService {
     private ComponentCatalogResponse mapToComponentCatalogResponse(ComponentCatalogEntity entity) {
         return ComponentCatalogResponse.builder()
                 .id(entity.getId())
+                .name(entity.getName())
                 .type(entity.getType())
                 .priceMin(entity.getPriceMin())
                 .priceMax(entity.getPriceMax())

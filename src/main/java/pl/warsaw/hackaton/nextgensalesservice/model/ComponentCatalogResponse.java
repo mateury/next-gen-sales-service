@@ -10,6 +10,7 @@ import java.sql.Timestamp;
 public class ComponentCatalogResponse {
     private Long id;
     private String type;
+    private String name;
     private String priceMin;
     private String priceMax;
     private String parameterName;

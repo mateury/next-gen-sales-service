@@ -11,6 +11,7 @@ public class OrderItemResponse {
     private Long id;
     private Long orderId;
     private Long componentCatalogId;
+    private String componentCatalogName;
     private String status;
     private Timestamp createDate;
     private Timestamp modifyDate;
