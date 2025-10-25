@@ -245,4 +245,9 @@ VALUES (1, 'MOBILE', 'Pakiet danych', '39.99', '49.99', 'limit_danych', '50GB', 
        (7, 'TV', 'Pakiet Telewizyjny', '29.99', '39.99', 'kanaly', '100', 'ACTIVE', CURRENT_TIMESTAMP,
         CURRENT_TIMESTAMP),
        (8, 'TV', 'Pakiet Telewizyjny', '49.99', '59.99', 'kanaly', '150', 'ACTIVE', CURRENT_TIMESTAMP,
-        CURRENT_TIMESTAMP);
+        CURRENT_TIMESTAMP),
+       -- Smartfony
+       (9, 'SMARTPHONE', 'Smartphone Galaxy S24', '2999.00', '3999.00', 'storage', '256GB', 'ACTIVE', CURRENT_TIMESTAMP, CURRENT_TIMESTAMP),
+       (10, 'SMARTPHONE', 'Smartphone iPhone 15', '4499.00', '5999.00', 'storage', '128GB', 'ACTIVE', CURRENT_TIMESTAMP, CURRENT_TIMESTAMP),
+       (11, 'SMARTPHONE', 'Smartphone Pixel 9', '3499.00', '4499.00', 'storage', '256GB', 'ACTIVE', CURRENT_TIMESTAMP, CURRENT_TIMESTAMP),
+       (12, 'SMARTPHONE', 'Smartphone OnePlus 12', '2999.00', '3799.00', 'storage', '256GB', 'ACTIVE', CURRENT_TIMESTAMP, CURRENT_TIMESTAMP);

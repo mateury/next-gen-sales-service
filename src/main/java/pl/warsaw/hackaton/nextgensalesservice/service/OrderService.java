@@ -108,4 +108,11 @@ public class OrderService {
                 .modifyDate(entity.getModifyDate())
                 .build();
     }
+
+    @Transactional(readOnly = true)
+    public OrderResponse getOrderById(Long orderId) {
+        OrderEntity order = orderRepository.findById(orderId)
+                .orElseThrow(() -> new RuntimeException("Order not found with id: " + orderId));
+        return mapToOrderResponse(order);
+    }
 }
